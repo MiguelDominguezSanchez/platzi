@@ -1,0 +1,81 @@
+/* CSS Structure */
+* {
+  /* To prevent undesired horizontal scroll */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* To play with rem */
+  font-size: 62.5%;
+}
+
+.container {
+  /* Display Flex, We need a Initial Father container to manipulate its content */
+  display: flex;
+  /* flex-wrap our content that are the inner divs can  reposition in case its size allow them to reposition as the view port grows  */
+  flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+  /* To implement styles to different classes, the way to do it is call the classes separated by coma */
+  /* Measurements of each one of our containers */
+  width: 100%;
+  min-width: 150px;
+  height: 150px;
+}
+
+.c1 {
+  background-color: #003476;
+}
+.c2 {
+  background-color: #0062d2;
+}
+.c3 {
+  background-color: #b4d2f7;
+}
+.c4 {
+  background-color: #d5dfef;
+}
+.c5 {
+  background-color: #dfe1e5;
+}
+
+/* @media queries at the bottom good practices */
+
+
+@media (min-width: 600px) {
+  /* Validate rule, from 600px on apply the code in this block */
+  /* Call elements and apply css rules */
+  /* Moved code to tablet style-sheet */
+  /*
+  .c2, 
+  .c3, 
+  .c4 {
+    width: 50%;
+  }
+  */
+}
+
+/* 
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .c1 {
+    width: 60%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .css3, .c4 {
+    width: 33%;
+  }
+  .c5 {
+    width: 34%;
+  }
+}
+ */
